@@ -1,5 +1,7 @@
 # just-login-bypass
 
+[![Build Status](https://travis-ci.org/ArtskydJ/just-login-bypass.svg?branch=master)](https://travis-ci.org/ArtskydJ/just-login-bypass)
+
 When developing an application that uses [Just Login][jlxyz], use this to bypass authentication in dev
 
 A replacement for the [just-login-emailer][jle]. Instead of emailing you when you click 'Login', it will just log you in as whomever. Don't use this in production. :)
