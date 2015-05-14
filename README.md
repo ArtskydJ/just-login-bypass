@@ -1,6 +1,8 @@
 # just-login-bypass
 
 [![Build Status](https://travis-ci.org/ArtskydJ/just-login-bypass.svg?branch=master)](https://travis-ci.org/ArtskydJ/just-login-bypass)
+[![Dependency Status](https://david-dm.org/artskydj/just-login-bypass.svg)](https://david-dm.org/artskydj/just-login-bypass)
+[![devDependency Status](https://david-dm.org/artskydj/just-login-bypass/dev-status.svg)](https://david-dm.org/artskydj/just-login-bypass#info=devDependencies)
 
 When developing an application that uses [Just Login][jlxyz], use this to bypass authentication in dev
 
