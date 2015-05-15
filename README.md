@@ -4,15 +4,9 @@
 [![Dependency Status](https://david-dm.org/artskydj/just-login-bypass.svg)](https://david-dm.org/artskydj/just-login-bypass)
 [![devDependency Status](https://david-dm.org/artskydj/just-login-bypass/dev-status.svg)](https://david-dm.org/artskydj/just-login-bypass#info=devDependencies)
 
-When developing an application that uses [Just Login][jlxyz], use this to bypass authentication in dev
+When developing an application that uses [Just Login][jlxyz], use this to bypass authentication during dev.
 
 A replacement for the [just-login-emailer][jle]. Instead of emailing you when you click 'Login', it will just log you in as whomever. Don't use this in production. :)
-
-With npm do:
-
-```
-npm install just-login-bypass
-```
 
 # api
 
@@ -49,8 +43,7 @@ customEmails(core, emailer)
 ```js
 module.exports = function customEmails(core, emailer) {
 	function makeEmail(token) {
-		return 'Copy & paste this into your browser: ' +
-			'http://example.com/login?token=' + token
+		return '<a href="http://example.com/login?token=' + token + '">Click me</a>'
 	}
 	var transportOpts = {
 		host: "smtp.gmail.com",
@@ -67,12 +60,19 @@ module.exports = function customEmails(core, emailer) {
 }
 ```
 
+# install
+
+With [npm](https://nodejs.org/download) do:
+
+```
+npm install just-login-bypass
+```
+
 
 # license
 
-[VOL][vol]
+[VOL](http://veryopenlicense.com)
 
 [jlxyz]: http://justlogin.xyz
 [jlc]: https://github.com/coding-in-the-wild/just-login-core
 [jle]: https://github.com/coding-in-the-wild/just-login-emailer
-[vol]: http://veryopenlicense.com
