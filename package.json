@@ -28,6 +28,6 @@
     "array.prototype.find": "^1.0.0"
   },
   "devDependencies": {
-    "tap": "^0.6.0"
+    "tap": "^1.0.4"
   }
 }
